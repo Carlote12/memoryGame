@@ -22,12 +22,21 @@ body {
     justify-content: center;
 }
 
+#starts {
+    color:white;
+    position: absolute;
+    padding: 1rem;
+    text-align: center;
+    width: calc(100% - 2rem);
+    font-size: 3rem;
+}
+
 .card {
     width: 100px;
     height: 140px;
     margin: 1rem;
     position: relative;
-    transition: transforms 0.5s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
 }
 
@@ -48,13 +57,14 @@ body {
 }
 
 .card .face {
-    background: purple;
+    background: skyblue;
     transform: rotateY( 180deg );
-    color: white;
+    color: black;
     font-size: 6rem;
 }
 
 .card .back {
-    border: 2px solid purple;
+    border: 3px solid skyblue;
+    background: url("cartas/dorso.png") center / contain no-repeat;
 }
 
